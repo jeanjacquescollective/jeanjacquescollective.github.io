@@ -1,1 +1,0 @@
-# jeanjacquescollective.github.io
