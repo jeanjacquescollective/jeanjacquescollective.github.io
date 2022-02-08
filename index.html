@@ -4,22 +4,42 @@
     <!-- we import arjs version without NFT but with marker + location based support -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <body style="margin : 0px; overflow: hidden;">
+      <a-assets>
+        <img id="bg" src="assets/img/bg.png">
+        <img id="calendar" src="assets/img/calendar.png">
+        <img id="crack1" src="assets/img/crack1.png">
+        <img id="crack2" src="assets/img/crack2.png">
+        <img id="door" src="assets/img/door.png">
+        <img id="hand" src="assets/img/hand.png">
+        <img id="man" src="assets/img/man.png">
+</a-assets>
         <a-scene embedded arjs>
+
         <a-marker preset="hiro">
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-            <a-entity
+            <!-- <a-entity
             position="0 0 0"
             scale="0.15 0.15 0.15"
             rotation ="0 15 0"
             gltf-model="dino.gltf"
-            ></a-entity>
+            ></a-entity> -->
+            <a-image position = "0 0 -6" width="1" height=".8" src="#bg"></a-image>
+            <a-image position = "0 0 -5.5" width="1" height=".8" src="#calendar"></a-image>
+            <a-image  position = "0 0 -5.11" width="1" height=".8" src="#crack1"></a-image>
+            <a-image position = "0 0 -5.12" width="1" height=".8" src="#crack2"></a-image>
+            <a-image  position = "0 0 -4.6" width="1" height=".8" src="#door"></a-image>
+            <a-image  position = "0 0 -4.5" width="1" height=".8" src="#hand"></a-image>
+            <a-image  position = "0 0 -3" width="1" height=".8" src="#man"></a-image>
+            <a-asset-item id="tree" src="dino.gltf"></a-asset-item>
         </a-marker>
         <a-entity camera></a-entity>
-        <a-assets>
-  <!-- <a-asset-item id="tree" src="dino.gltf"></a-asset-item>
+
+
+  <!-- Using the asset management system. -->
+
 </a-assets>
 
-<a-entity gltf-model="#tree" position="0 0 -5"
+<!-- <a-entity gltf-model="#tree" position="0 0 -5"
 scale="0.05 0.05 0.05"
 rotation ="0 15 0"
 gltf-model="dino.gltf"></a-entity> -->
