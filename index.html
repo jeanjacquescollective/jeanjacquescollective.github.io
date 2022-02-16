@@ -38,7 +38,8 @@
     <!-- <a-entity camera></a-entity> -->
     <!-- 51.0598635,3.7240048 -->
     <a-box material="color: yellow" gps-entity-place="latitude: 51.0598635; longitude: 3.7240048" position="0 0 0"/>
-    <a-camera gps-camera rotation-reader></a-camera>
+    <!-- <a-camera gps-camera rotation-reader></a-camera> -->
+    <a-camera id='camera1' look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-camera='gpsMinDistance: 5' rotation-reader> </a-camera>
 
 
     <!-- <a-entity gltf-model="#tree" position="0 0 -5"
