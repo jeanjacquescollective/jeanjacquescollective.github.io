@@ -10,11 +10,30 @@
 <body style="margin : 0px; overflow: hidden;">
   <a-scene embedded arjs>
     <a-assets>
-      <a-asset-item id="tree" src="dino.gltf"></a-asset-item>
+      <img id="bg" src="assets/img/bg.png">
+      <img id="calendar" src="assets/img/calendar.png">
+      <img id="crack1" src="assets/img/crack1.png">
+      <img id="crack2" src="assets/img/crack2.png">
+      <img id="door" src="assets/img/door.png">
+      <img id="hand" src="assets/img/hand.png">
+      <img id="man" src="assets/img/man.png">
     </a-assets>
     <a-marker preset="hiro">
       <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-      <a-entity position="0 0 0" scale="0.3 0.3 0.3" rotation="0 15 0" gltf-model="dino.gltf"></a-entity>
+      <!-- <a-entity
+            position="0 0 0"
+            scale="0.15 0.15 0.15"
+            rotation ="0 15 0"
+            gltf-model="dino.gltf"
+            ></a-entity> -->
+      <a-image position="0 0 0" width="10" height="8" src="#bg" rotation ="-90 0 0"></a-image>
+      <a-image position="0 1.0 0" width="10" height="8" src="#calendar" rotation ="-90 0 0"></a-image>
+      <a-image position="0 1.0 0" width="10" height="8" src="#crack1" rotation ="-90 0 0"></a-image>
+      <a-image position="0 1.5 0" width="10" height="8" src="#crack2" rotation ="-90 0 0"></a-image>
+      <a-image position="0 1.7 0" width="10" height="8" src="#door" rotation ="-90 0 0"></a-image>
+      <a-image position="0 1.8 0" width="10" height="8" src="#hand" rotation ="-90 0 0"></a-image>
+      <a-image position="0 2 0" width="10" height="8" src="#man" rotation ="-90 0 0"></a-image>
+      <a-asset-item id="tree" src="dino.gltf"></a-asset-item>
     </a-marker>
     <!-- <a-entity camera></a-entity> -->
     <!-- 51.0598635,3.7240048 -->
