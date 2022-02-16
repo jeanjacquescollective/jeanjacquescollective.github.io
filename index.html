@@ -1,28 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-    <!-- we import arjs version without NFT but with marker + location based support -->
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    <body style="margin : 0px; overflow: hidden;">
-        <a-scene embedded arjs>
-        <a-marker preset="hiro">
-            <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-            <a-entity
-            position="0 -1 0"
-            scale="0.3 0.3 0.3"
-            rotation ="0 15 0"
-            gltf-model="dino.gltf"
-            ></a-entity>
-        </a-marker>
-        <a-entity camera></a-entity>
-        <a-assets>
-  <!-- <a-asset-item id="tree" src="dino.gltf"></a-asset-item>
-</a-assets>
+<head>
+  <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <link rel="stylesheet" href="/css/master.css">
+</head>
 
-<a-entity gltf-model="#tree" position="0 0 -5"
+<body style="margin : 0px; overflow: hidden;">
+  <a-scene embedded arjs>
+    <a-assets>
+      <a-asset-item id="tree" src="dino.gltf"></a-asset-item>
+    </a-assets>
+    <a-marker preset="hiro">
+      <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
+      <a-entity position="0 0 0" scale="0.3 0.3 0.3" rotation="0 15 0" gltf-model="dino.gltf"></a-entity>
+    </a-marker>
+    <!-- <a-entity camera></a-entity> -->
+    <!-- 51.0598635,3.7240048 -->
+    <a-box material="color: yellow" gps-entity-place="latitude: 51.0598635; longitude: 3.7240048" position="0 0 0"/>
+    <a-camera gps-camera rotation-reader></a-camera>
+
+
+    <!-- <a-entity gltf-model="#tree" position="0 0 -5"
 scale="0.05 0.05 0.05"
-rotation ="0 15 0"
-gltf-model="dino.gltf"></a-entity> -->
-        </a-scene>
-    </body>
+rotation ="0 0 0"
+gltf-model="dino.gltf"></a-entity>
+        </a-scene> -->
+
+    <!-- additional information -->
+    <section id="instructions-wrapper" class="instructions-wrapper hidden">
+
+      <p>Hier komen de instructies voor de pagina</p>
+    </section>
+    <!-- <script type="text/javascript">
+      function getCookie(cName) {
+        const name = cName + "=";
+        const cDecoded = decodeURIComponent(document.cookie); //to be careful
+        const cArr = cDecoded.split('; ');
+        let res;
+        cArr.forEach(val => {
+          if (val.indexOf(name) === 0) res = val.substring(name.length);
+        })
+        return res;
+      }
+      // Set a Cookie
+      function setCookie(cName, cValue, expDays) {
+        let date = new Date();
+        date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+      }
+      let checkVisited = () => {
+        let cookies = document.cookie;
+        if (getCookie("visited") == undefined) {
+          setCookie("visited", true, .001);
+          return false;
+        }
+        return true;
+      }
+
+      if (checkVisited()) {
+        decument.getElementById("instructions-wrapper").classList.remove("hidden");
+      }
+    </script> -->
+</body>
+
 </html>
