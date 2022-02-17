@@ -40,13 +40,14 @@
     <a-box material="color: yellow" gps-entity-place="latitude: 51.0598635; longitude: 3.7240048" position="0 0 0"/>
     <!-- <a-camera gps-camera rotation-reader></a-camera> -->
     <a-camera id='camera1' look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-camera='gpsMinDistance: 5' rotation-reader> </a-camera>
-
+    <a-entity id="river" geometry="primitive: plane" material="color: blue"
+        position="-10 0 0" sound="src: url(spaceship-cruising-ufo-7176.mp3); autoplay: true"></a-entity>
 
     <!-- <a-entity gltf-model="#tree" position="0 0 -5"
 scale="0.05 0.05 0.05"
 rotation ="0 0 0"
-gltf-model="dino.gltf"></a-entity>
-        </a-scene> -->
+gltf-model="dino.gltf"></a-entity> -->
+        </a-scene>
 
     <!-- additional information -->
     <section id="instructions-wrapper" class="instructions-wrapper hidden">
