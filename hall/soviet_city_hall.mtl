@@ -1,0 +1,272 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 04.06.2019 20:32:19
+
+newmtl main_wall
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\main_walls.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\main_walls.png
+	map_bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\main_walls_NRM.png
+	bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\main_walls_NRM.png
+
+newmtl concrete
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_concrete_main.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_concrete_main.png
+	map_bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_concrete_main_NRM.png
+	bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_concrete_main_NRM.png
+
+newmtl windows
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\windows.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\windows.png
+
+newmtl dark_wall
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\dark_wall.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\dark_wall.png
+	map_bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\dark_wall_NRM.png
+	bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\dark_wall_NRM.png
+
+newmtl wn_wide
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_wide_wn.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_wide_wn.png
+
+newmtl marble
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\marble_black.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\marble_black.png
+	map_bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\marble_black_NRM.png
+	bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\marble_black_NRM.png
+
+newmtl stairs
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\stairs.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\stairs.png
+	map_bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\stairs_NRM.png
+	bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\stairs_NRM.png
+
+newmtl wn_big3
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_wn_big.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_wn_big.png
+
+newmtl doors
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_backboors.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_backboors.png
+
+newmtl red_tiles
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_tiles_red.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_tiles_red.png
+	map_bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_tiles_red_NRM.png
+	bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_tiles_red_NRM.png
+
+newmtl clumba
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\dk_decor_wall.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\dk_decor_wall.png
+	map_bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\dk_decor_wall_NRM.png
+	bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\dk_decor_wall_NRM.png
+
+newmtl grass
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\grass_flowers_a.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\grass_flowers_a.png
+	map_bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\grass_flowers_a_NRM.png
+	bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\grass_flowers_a_NRM.png
+
+newmtl entr2
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_entance_big.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_entance_big.png
+
+newmtl wn_big2
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_big_wn_b.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_big_wn_b.png
+
+newmtl roof
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\roof.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\roof.png
+	map_bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\roof_NRM.png
+	bump D:\Business\2018\3D Ocean\3D Models\soviet city hall\roof_NRM.png
+
+newmtl entr1
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_entrance_small.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_entrance_small.png
+
+newmtl wn_big1
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_wn_big_c.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_wn_big_c.png
+
+newmtl wn_wide2
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_wide_wn_b.png
+	map_Kd D:\Business\2018\3D Ocean\3D Models\soviet city hall\p_wide_wn_b.png
