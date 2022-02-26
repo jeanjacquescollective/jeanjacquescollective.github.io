@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
   <!-- we import arjs version without NFT but with marker + location based support -->
@@ -18,14 +19,8 @@
       <img id="hand" src="assets/img/hand.png">
       <img id="man" src="assets/img/man.png">
     </a-assets>
-    <a-marker preset="hiro">
-      <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-      <!-- <a-entity
-            position="0 0 0"
-            scale="0.15 0.15 0.15"
-            rotation ="0 15 0"
-            gltf-model="dino.gltf"
-            ></a-entity> -->
+    <!-- <a-marker preset="hiro">
+
       <a-image position="0 0 0" width="10" height="8" src="#bg" rotation ="-90 0 0"></a-image>
       <a-image position="0 1.0 0" width="10" height="8" src="#calendar" rotation ="-90 0 0"></a-image>
       <a-image position="0 1.0 0" width="10" height="8" src="#crack1" rotation ="-90 0 0"></a-image>
@@ -34,34 +29,30 @@
       <a-image position="0 1.8 0" width="10" height="8" src="#hand" rotation ="-90 0 0"></a-image>
       <a-image position="0 2 0" width="10" height="8" src="#man" rotation ="-90 0 0"></a-image>
       <a-asset-item id="tree" src="dino.gltf"></a-asset-item>
-    </a-marker>
+    </a-marker> -->
     <!-- <a-entity camera></a-entity> -->
     <!-- 51.0598635,3.7240048 -->
     <!-- 51.05275, 3.71839 -->
     <!-- 51.17661, 3.74338 -->
-<a-box material="color: yellow" gps-entity-place="latitude: 51.17661; longitude: 3.74338" position="0 0 0"/>
-    <a-box material="color: yellow" gps-entity-place="latitude: 51.05278; longitude: 3.71838" position="0 0 0"/>
-    <a-box material="color: yellow" gps-entity-place="latitude: 51.05275; longitude: 3.71839" position="0 0 0"/>
-    <!-- <a-camera gps-camera rotation-reader></a-camera> -->
-    <a-entity id="river" geometry="primitive: plane" material="color: blue"
-        position="-1 3 0" sound="src: url(spaceship-cruising-ufo-7176.mp3); autoplay: true"></a-entity>
-      <a-camera id='camera1' look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-camera='gpsMinDistance: 5' rotation-reader> </a-camera>
+    <!-- tuchthuis 50.92714, 4.41894 -->
+    <a-box material="color: yellow" gps-entity-place="latitude: 50.92714; longitude: 4.41894" position="0 0 0" />
+    <a-camera id='camera1' look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-camera='gpsMinDistance: 5' rotation-reader> </a-camera>
     <!-- <a-entity gltf-model="#tree" position="0 0 -5"
 scale="0.05 0.05 0.05"
 rotation ="0 0 0"
 gltf-model="dino.gltf"></a-entity> -->
-        </a-scene>
+  </a-scene>
 
-    <!-- additional information -->
-    <section id="instructions-wrapper" class="instructions-wrapper hidden">
+  <!-- additional information -->
+  <section id="instructions-wrapper" class="instructions-wrapper hidden">
 
-      <p>Hier komen de instructies voor de pagina</p>
-    </section>
-    <script type="text/javascript">
+    <p>Hier komen de instructies voor de pagina</p>
+  </section>
+  <script type="text/javascript">
     const distanceMsg = document.querySelector('[gps-entity-place]').getAttribute('distanceMsg');
-console.log(distanceMsg);   // "890 meters"
-    </script>
-    <!-- <script type="text/javascript">
+    console.log(distanceMsg); // "890 meters"
+  </script>
+  <!-- <script type="text/javascript">
       function getCookie(cName) {
         const name = cName + "=";
         const cDecoded = decodeURIComponent(document.cookie); //to be careful
