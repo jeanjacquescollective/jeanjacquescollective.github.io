@@ -15,44 +15,52 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
+    <a-scene
+      vr-mode-ui="enabled: false"
+      embedded
+      arjs="sourceType: webcam; debugUIEnabled: false;"
+    >
     <a-assets>
   <a-asset-item id="tree-obj" src="hall/soviet_city_hall.obj"></a-asset-item>
   <a-asset-item id="tree-mtl" src="hall/soviet_city_hall.mtl"></a-asset-item>
 </a-assets>
 
 <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" gps-entity-place="longitude: 4.4194; latitude: 50.9274;"></a-entity>
-      <a-box
+  
 
+<a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
+      <a-box
+        look-at="[gps-camera]"
 		material="color: yellow"
         scale="1 1 1"
         gps-entity-place="longitude: 4.41897-0.0005; latitude: 50.92716+0.0006;"
       ></a-box>
       <a-box
-
+        look-at="[gps-camera]"
 		material="color: red"
         scale="1 1 1"
         gps-entity-place="longitude: 4.41897-0.0001; latitude: 50.92716+0.0004;"
       ></a-box>
       <a-box
-
+        look-at="[gps-camera]"
 		material="color: blue"
         scale="1 1 1"
         gps-entity-place="longitude: 4.41899837; latitude: 50.92743039;"
       ></a-box>
       <a-box
-
+        look-at="[gps-camera]"
 		material="color: yellow"
         scale="1 1 1"
         gps-entity-place="longitude:4.4194-0.0005; latitude: 50.9274+0.0006;"
       ></a-box>
       <a-box
-
+        look-at="[gps-camera]"
 		material="color: red"
         scale="1 1 1"
         gps-entity-place="longitude:4.4194-0.0001; latitude: 50.9274+0.0004;"
       ></a-box>
       <a-box
-
+        look-at="[gps-camera]"
 		material="color: blue"
         scale="1 1 1"
         gps-entity-place="longitude: 4.4194; latitude: 50.9274;"
