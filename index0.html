@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <link rel="stylesheet" href="/css/master.css">
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+  <a-scene embedded arjs>
+    <a-assets>
+      <img id="bg" src="assets/img/bg.png">
+      <img id="calendar" src="assets/img/calendar.png">
+      <img id="crack1" src="assets/img/crack1.png">
+      <img id="crack2" src="assets/img/crack2.png">
+      <img id="door" src="assets/img/door.png">
+      <img id="hand" src="assets/img/hand.png">
+      <img id="man" src="assets/img/man.png">
+    </a-assets>
+    <!-- <a-marker preset="hiro">
+
+      <a-image position="0 0 0" width="10" height="8" src="#bg" rotation ="-90 0 0"></a-image>
+      <a-image position="0 1.0 0" width="10" height="8" src="#calendar" rotation ="-90 0 0"></a-image>
+      <a-image position="0 1.0 0" width="10" height="8" src="#crack1" rotation ="-90 0 0"></a-image>
+      <a-image position="0 1.5 0" width="10" height="8" src="#crack2" rotation ="-90 0 0"></a-image>
+      <a-image position="0 1.7 0" width="10" height="8" src="#door" rotation ="-90 0 0"></a-image>
+      <a-image position="0 1.8 0" width="10" height="8" src="#hand" rotation ="-90 0 0"></a-image>
+      <a-image position="0 2 0" width="10" height="8" src="#man" rotation ="-90 0 0"></a-image>
+      <a-asset-item id="tree" src="dino.gltf"></a-asset-item>
+    </a-marker> -->
+    <!-- <a-entity camera></a-entity> -->
+    <!-- 51.0598635,3.7240048 -->
+    <!-- 51.05275, 3.71839 -->
+    <!-- 51.17661, 3.74338 -->
+    <!-- tuchthuis 50.92714, 4.41894 -->
+    <a-box material="color: yellow" gps-entity-place="latitude: 50.92714; longitude: 4.41894" position="0 0 0" />
+    <a-camera id='camera1' look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-camera='gpsMinDistance: 5' rotation-reader> </a-camera>
+    <!-- <a-entity gltf-model="#tree" position="0 0 -5"
+scale="0.05 0.05 0.05"
+rotation ="0 0 0"
+gltf-model="dino.gltf"></a-entity> -->
+  </a-scene>
+
+  <!-- additional information -->
+  <section id="instructions-wrapper" class="instructions-wrapper hidden">
+
+    <p>Hier komen de instructies voor de pagina</p>
+  </section>
+  <script type="text/javascript">
+    const distanceMsg = document.querySelector('[gps-entity-place]').getAttribute('distanceMsg');
+    console.log(distanceMsg); // "890 meters"
+  </script>
+  <!-- <script type="text/javascript">
+      function getCookie(cName) {
+        const name = cName + "=";
+        const cDecoded = decodeURIComponent(document.cookie); //to be careful
+        const cArr = cDecoded.split('; ');
+        let res;
+        cArr.forEach(val => {
+          if (val.indexOf(name) === 0) res = val.substring(name.length);
+        })
+        return res;
+      }
+      // Set a Cookie
+      function setCookie(cName, cValue, expDays) {
+        let date = new Date();
+        date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+      }
+      let checkVisited = () => {
+        let cookies = document.cookie;
+        if (getCookie("visited") == undefined) {
+          setCookie("visited", true, .001);
+          return false;
+        }
+        return true;
+      }
+
+      if (checkVisited()) {
+        decument.getElementById("instructions-wrapper").classList.remove("hidden");
+      }
+    </script> -->
+</body>
+
+</html>
